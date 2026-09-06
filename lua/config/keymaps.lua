@@ -46,3 +46,5 @@ end, { desc = "Move to the window down"})
 vim.keymap.set("n", "<C-k>", function()
     vim.cmd("wincmd k")
 end, { desc = "Move to the window up"})
+
+vim.keymap.set('t', '`', [[<C-\><C-n>]], { desc = 'Exit terminal mode' })
