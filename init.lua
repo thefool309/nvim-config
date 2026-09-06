@@ -53,6 +53,13 @@ vim.keymap.set("n", "<leader>e", function()
   end
 end, { desc = "Smart toggle/focus file explorer" })
 
+vim.keymap.set("n", "<C-l>", function()
+    vim.cmd("wincmd l")
+end, { desc = "Move to right window" })
+
+vim.keymap.set("n", "<C-h>", function()
+    vim.cmd("wincmd h")
+end, { desc = "Move to left window" })
 require("config.lazy")
 
 require("mason").setup({
