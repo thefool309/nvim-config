@@ -47,4 +47,8 @@ vim.keymap.set("n", "<C-k>", function()
     vim.cmd("wincmd k")
 end, { desc = "Move to the window up"})
 
+vim.keymap.set("n", "<leader>d", function()
+    vim.diagnostic.open_float()
+end, { desc = "show error message in editor"})
+
 vim.keymap.set('t', '`', [[<C-\><C-n>]], { desc = 'Exit terminal mode' })

@@ -30,7 +30,7 @@ return {
               -- Launch using the built-in native Neovim LSP engine
               vim.lsp.start({
                 name = "clangd",
-                cmd = { "clangd", "--background-index", "--clang-tidy" },
+                cmd = { "clangd", "--background-index", "--clang-tidy", "--compile-commands-dir=./" },
                 root_dir = root_dir,
               }, { bufnr = args.buf })
             end,
